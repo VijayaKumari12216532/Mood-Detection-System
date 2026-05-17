@@ -3,22 +3,101 @@ __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
+*.pyi
+*.pyc
 .venv/
 venv/
+ENV/
+env/
+.Python
 .pytest_cache/
+coverage/
+htmlcov/
+.pyright/
+.mypy_cache/
 
 # Node
 node_modules/
-dist/
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+/dist
+/build
+/.turbo
+/.parcel-cache
+/.vite
 
-# Env
+# Vite / frontend build
+frontend/dist/
+frontend/.vite/
+frontend/node_modules/
+frontend/build/
+
+# Backend
+backend/__pycache__/
+backend/.venv/
+backend/venv/
+backend/.pytest_cache/
+backend/coverage/
+
+# Environment files
 .env
+*.env
 backend/.env
 frontend/.env
 
 # Logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log.*
 
 # OS
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# IDE / Editor
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*~
+
+# Docker
+docker-compose.override.yml
+docker-compose.*.local.yml
+*.dockerignore
+backend/.dockerignore
+frontend/.dockerignore
+
+# Local tool / runtime files
+.mcp.json
+.opencode.json
+.runtime/
+
+# Project notes / temporary docs
+design.md
+PREVIOUS_TASKS.md
+PREVIOUS_TASK.md
+setup.md
+TASK_LIST.md
+prd.md
+
+# Temporary / local artifacts
+tmp*
+*.tmp
+*.temp
+*.bak
+*.swp
+*.pid
+*.seed
+*.log
+
+# Project-specific local temp files
+tmp_face_test.jpg
